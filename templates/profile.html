@@ -1,0 +1,45 @@
+<ion-view view-title="Eternity CrossFit">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/crossfit.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/crossfit-profile.jpg');"></div>
+                <h3><a class="light">Veronica Betancourt</a></h3>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.activity" class="tab-item">
+                <i class="icon ion-arrow-graph-up-right"></i> Work
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-android-people"></i> Ranking
+            </a>
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-images"></i> Settings
+            </a>
+        </div>
+        <h4 class="content padding double-padding-x">Ranking</h4>
+        <div class="list animate-fade-slide-in-right">
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/images.jpg">
+                <h2>#41</h2>
+                <h2>Jon Snow</h2>
+                <p>01:05:21</p>
+                <i class="icon ion-chatbubble muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/images1.jpg">
+                <h2>#42</h2>
+                <h2>Sansa Stark</h2>
+                <p>01:05:21</p>
+                <i class="icon ion-chatbubble muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/images2.jpg">
+                <h2>#43</h2>
+                <h2>Tyrion Lannister</h2>
+                <p>01:05:21</p>
+                <i class="icon ion-chatbubble muted"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
