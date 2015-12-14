@@ -1,0 +1,60 @@
+<link href="//fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic">
+<link rel="stylesheet" href="css/preview.css">
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/ionic.min.css">
+<link rel="stylesheet" href="css/material-ionic.css">
+<link rel="stylesheet" href="css/waves.css">
+<script src="../js/jquery-1.11.0.js"></script>
+<ion-view view-title="Categories">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <div class="content has-header">
+            <div class="list condensed-space no-padding animate-blinds">
+                <div class="card dark-bg">
+                    <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse" >
+                        <h2>Toronto</h2>
+                        <p>Drake's Raptastic Raptors</p>
+                        <img src="img/toronto.jpg">
+                    </a>
+                </div>
+                <div class="card energized-bg">
+                    <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse" >
+                        <h2>Scotland</h2>
+                        <p>Land of Unicorns</p>
+                        <img src="img/scotland.jpg">
+                    </a>
+                </div>
+                <div class="card assertive-bg">
+                    <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse" >
+                        <h2>Kyoto</h2>
+                        <p>Cultural Experience</p>
+                        <img src="img/kyoto.jpg">
+                    </a>
+                </div>
+                <div class="card balanced-bg">
+                    <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse" >
+                        <h2>New Zealand</h2>
+                        <p>More Than the Other Down Under</p>
+                        <img src="img/new-zealand.jpg">
+                    </a>
+                </div>
+                <div class="card royal-bg">
+                    <a class="item clear-bg item-bg-image waves-effect waves-button waves-light has-mask-reverse" >
+                        <h2>Hawai'i</h2>
+                        <p>Paradise Getaway</p>
+                        <img src="img/hawaii.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<script src="js/waves.min.js"></script>
+<script src="js/material-ionic.js"></script>
+<script>
+    Waves.displayEffect();
+    setTimeout(function() {
+        Mi.motion.blindsDown({
+            selector: '.card'
+        });
+    }, 500);
+</script>
