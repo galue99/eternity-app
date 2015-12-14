@@ -1,72 +1,26 @@
-<ion-view view-title="Gallery">
+<ion-view view-title="Settings">
     <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
-        <div class="list half">
-            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
-                <div class="ink dark-bg">
-                    <h2>Where's Elsa?</h2>
-                    <img class="full-image" src="img/sansa-snowcastle3.jpg">
-                </div>
-                <div class="item tabs tabs-secondary tabs-icon-left">
-                    <a class="tab-item stable-bg assertive">
-                        <i class="icon ion-heart"></i>
-                        4
-                    </a>
-                    <a class="tab-item stable-bg positive-900">
-                        <i class="icon ion-chatbubbles"></i>
-                        2
-                    </a>
-                </div>
-            </div>
-            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
-                <div class="ink dark-bg">
-                    <h2>Hmm. Hope nobody destroys this!</h2>
-                    <img class="full-image" src="img/sansa-snowcastle.png">
-                </div>
-                <div class="item tabs tabs-secondary tabs-icon-left">
-                    <a class="tab-item stable-bg assertive">
-                        <i class="icon ion-heart"></i>
-                        6
-                    </a>
-                    <a class="tab-item stable-bg positive-900">
-                        <i class="icon ion-chatbubbles"></i>
-                        1
-                    </a>
-                </div>
+        <div class="item range">
+            <i class="icon ion-volume-low"></i>
+            <input type="range" name="volume">
+            <i class="icon ion-volume-high"></i>
+        </div>
+
+        <div class="list">
+            <div class="item range range-positive">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volume" min="0" max="100" value="33">
+                <i class="icon ion-ios-sunny"></i>
             </div>
         </div>
-        <div class="list half">
-            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
-                <div class="ink dark-bg">
-                    <h2>Making Olaf a House</h2>
-                    <img class="full-image" src="img/sansa-snowcastle2.jpg">
-                </div>
-                <div class="item tabs tabs-secondary tabs-icon-left">
-                    <a class="tab-item stable-bg assertive">
-                        <i class="icon ion-heart"></i>
-                        22
-                    </a>
-                    <a class="tab-item stable-bg positive-900">
-                        <i class="icon ion-chatbubbles"></i>
-                        9
-                    </a>
-                </div>
+
+        <div class="row">
+            <div class="col col-25 col-offset-25">
+                <button class="button button-assertive">
+                    Sing Up
+                </button>
             </div>
-            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
-                <div class="ink dark-bg">
-                    <h2>ohai!</h2>
-                    <img class="full-image" src="img/sansa-snowcastle4.jpg">
-                </div>
-                <div class="item tabs tabs-secondary tabs-icon-left">
-                    <a class="tab-item stable-bg assertive">
-                        <i class="icon ion-heart"></i>
-                        8
-                    </a>
-                    <a class="tab-item stable-bg positive-900">
-                        <i class="icon ion-chatbubbles"></i>
-                        0
-                    </a>
-                </div>
-            </div>
+
         </div>
     </ion-content>
 </ion-view>
